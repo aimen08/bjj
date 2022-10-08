@@ -1,0 +1,30 @@
+.spinner {
+  margin-left: 0.2em;
+  font-size: 70px;
+  width: 0.5em;
+  fill: transparent;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-dasharray: 125;
+  animation: spinner 4s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    stroke-dashoffset: 25;
+    transform: rotate(0deg);
+  }
+  50% {
+    stroke-dashoffset: 125;
+    transform: rotate(720deg);
+  }
+  100% {
+    stroke-dashoffset: 25;
+    transform: rotate(1080deg);
+  }
+}
+
+.spinner > circle {
+  fill: transparent;
+}
